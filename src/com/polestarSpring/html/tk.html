@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <title>자기소개서</title>
+    <style>
+    .header {
+    grid-area : header;
+    text-align : center;
+    }
+
+    .container{
+    display: grid;
+    grid-template-areas:
+    'header header header'
+    'one two three'
+    'footer footer footer';
+}
+
+    .one, .two, .three,
+    {
+    padding : 20px;
+    margin:auto;
+
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+
+
+    outline:black;
+    }
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body style="padding:50px">
+
+<h1 class="header">자기소개서</h1>
+<p class="header">권태우입니다.</p>
+
+<!--
+<div style="text-align:center">
+    <button type="button" class="btn btn-secondary">프로필 사진</button>
+</div>
+
+-->
+<div class="container" style="margin-top :30px; margin-bottom: 30px">
+
+    <!--
+    <div class="one" style="background-color:lavender">
+        <p class="text-center">
+            폴스타헬스케어 신입입니다.
+        </p>
+
+    </div>
+    <div class="two" style="background-color: white">
+        <p class="text-center">
+            8월 2일 첫 출근입니다.
+        </p>
+    </div>
+    <div class="three" style="background-color:lavender; height:200px">
+        <p class="text-center">
+
+            반갑습니다 :)
+        </p>
+    </div>
+    -->
+
+</div>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+
+    <ul class=" carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ul>
+
+    <div class="carousel-inner">
+
+        <div class="carousel-item active">
+            <div style="text-align:center">
+                <img src="logo.jpg" alt="logo" style="height:300px; width:auto">
+            </div>
+
+        </div>
+
+        <div class="carousel-item">
+
+            <div class="one" style="background-color: #CC9999; height:300px">
+                <p class="text-center" style="height:auto">
+                    폴스타헬스케어 신입입니다.
+                </p>
+
+            </div>
+        </div>
+
+        <div class="carousel-item">
+
+            <div class="two" style="background-color: #CC99CC; height:300px">
+                <p class="text-center" style="height:auto">
+                    8월 2일 첫 출근입니다.
+                </p>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+
+
+            <div class="three" style="background-color: #CC99FF; height:300px">
+                <p class="text-center" style="height:auto">
+
+                    반갑습니다 :)
+                </p>
+            </div>
+
+        </div>
+
+
+    </div>
+    <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </a>
+
+</div>
+
+
+</body>
+
+
+<script>
+    $('.btn').button();
+
+
+
+
+
+
+
+</script>
+
+</html>
