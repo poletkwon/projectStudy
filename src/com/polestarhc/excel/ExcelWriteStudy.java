@@ -21,7 +21,7 @@ public class ExcelWriteStudy {
     public void makeExcel(List<IExcel> list) {
 
         XSSFWorkbook workbook = new XSSFWorkbook();
-        XSSFSheet sheet = workbook.createSheet("Datatypes in Java");
+        XSSFSheet sheet = workbook.createSheet("환자정보");
 
         int rowNum = 0;
         System.out.println("Creating excel");
