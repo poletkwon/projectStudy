@@ -18,44 +18,13 @@ public class ExcelWriteStudy {
     private String[] headers = {"PatientId", "PatientName"};
     private String[] titles = {"환자번호", "환자이름"};
 
-
     public void makeExcel(List<IExcel> list) {
-
 
         XSSFWorkbook workbook = new XSSFWorkbook();
         XSSFSheet sheet = workbook.createSheet("Datatypes in Java");
 
-        Object[][] datatypes =
-                {
-//                        {"DataType", "Type", "Size(in bytes)"},
-                };
-//        for (int i=0; i < 10 ; i++){
-//            for(int j = 0 ; j < 10 ; j++){
-//                System.out.println("i값은 : " + i);
-//                System.out.println("j값은 : " + j);
-//            }
-//        }
-
         int rowNum = 0;
         System.out.println("Creating excel");
-//
-//        for (Object[] datatype : datatypes) {
-//            Row row = sheet.createRow(rowNum++);
-//            int colNum = 0;
-//            for (Object field : datatype) {
-//                Cell cell = row.createCell(colNum++);
-//
-//                if (field instanceof String) {
-//                    cell.setCellValue((String) field);
-//                } else if (field instanceof Integer) {
-//                    cell.setCellValue((Integer) field);
-//                }
-//            }
-//        }
-//
-
-        // Test Code
-
 
         Row row = sheet.createRow(rowNum++);
         int colNum = 0;
@@ -81,9 +50,6 @@ public class ExcelWriteStudy {
 
         }
 
-
-        // Test Code End
-
         try {
             FileOutputStream outputStream = new FileOutputStream(FILE_NAME);
             workbook.write(outputStream);
@@ -95,7 +61,6 @@ public class ExcelWriteStudy {
         }
 
         System.out.println("Done");
-
     }
 
     public static void main(String[] args) {
@@ -110,12 +75,7 @@ public class ExcelWriteStudy {
             list.add(study);
         }
 
-
         ExcelWriteStudy ews = new ExcelWriteStudy();
         ews.makeExcel(list);
-
-
     }
-
-
 }
